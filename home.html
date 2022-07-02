@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <script language="javascript" type="text/javascript">
+        function clearText(field)
+        {
+            if (field.defaultValue == field.value) field.value = '';
+            else if (field.value == '') field.value = field.defaultValue;
+        }
+        </script>
+            <link rel="stylesheet" type="text/css"href="Style.css">
+        <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+        <script src="js/jquery.nivo.slider.js" type="text/javascript"></script>
+        
+        <script type="text/javascript">
+        $(window).load(function() {
+            $('#slider').nivoSlider({
+                effect:'random',
+                slices:10,
+                animSpeed:500,
+                pauseTime:2200,
+                startSlide:0, //Set starting Slide (0 index)
+                directionNav:false,
+                directionNavHide:false, //Only show on hover
+                controlNav:false, //1,2,3...
+                controlNavThumbs:false, //Use thumbnails for Control Nav
+                pauseOnHover:true, //Stop animation while hovering
+                manualAdvance:false, //Force manual transitions
+                captionOpacity:0.8, //Universal caption opacity
+                beforeChange: function(){},
+                afterChange: function(){},
+                slideshowEnd: function(){} //Triggers after all slides have been shown
+            });
+        });
+        </script>
+
+
+
+</head>
+<body>
+    <div class="heading template clear">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="logo">
+        <h2>Website title</h2>
+        <p>Our website description</p>
+
+        </div>
+        <div class="social">
+           <a href="#"> <img src="images/Social/fb.jpg" alt="faceook"></a>
+           <a href="#"> <img src="images/Social/youtube.jpg" alt="youtube"></a>
+            <a href="#"> <img src="images/Social/in.jpg" alt="Linkedin"></a>
+            <a href="#"> <img src="images/Social/google.jpg" alt="GOOGle"></a>
+
+        </div>
+        
+    </div>
+    <div class="navsection template clear">
+        
+        <ul>
+            <li id="active"><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            
+        </ul>
+    </div>
+    <div class="slidersection template clear">
+        <div id="slider">
+            <a href="#"><img src="images/slideshow/01.jpg" alt="nature 1" /></a>
+            <a href="#"><img src="images/slideshow/02.jpg" alt="nature 2" /></a>
+            <a href="#"><img src="images/slideshow/03.jpg" alt="nature 3" /></a>
+            <a href="#"><img src="images/slideshow/04.jpg" alt="nature 4" /></a>
+        </div>
+    </div>
+        <div class="containsection template clear">
+        <div class="Maincontain">
+            <div class="samepost clear">
+                <h2>Our post title here</h2>
+                <img src="images/1.jpg" alt="nature img">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy text
+                     ever since the 1500s, when an unknown printer took a galley of
+                      type and scrambled it to make a type specimen book. It has
+                       survived not only five centuries,
+                       Lorem Ipsum is simply dummy text of the printing and typesetting
+                       industry. Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s, when an unknown printer took a galley of
+                         type and scrambled it to make a type specimen book. It has
+                          survived not only five centuries,</p>
+            <div class="readmore clear"><a href="post.html">Read More</a></div>
+            </div>
+            <div class="samepost clear">
+                <h2>Our post title here</h2>
+                <img src="images/2.jpg" alt="nature img">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy text
+                     ever since the 1500s, when an unknown printer took a galley of
+                      type and scrambled it to make a type specimen book. It has
+                       survived not only five centuries,
+                       Lorem Ipsum is simply dummy text of the printing and typesetting
+                       industry. Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s, when an unknown printer took a galley of
+                         type and scrambled it to make a type specimen book. It has
+                          survived not only five centuries,</p>
+            <div class="readmore clear"><a href="post.html">Read More</a></div>
+            </div>
+            <div class="samepost clear">
+                <h2>Our post title here</h2>
+                <img src="images/3.jpg" alt="nature img">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy text
+                     ever since the 1500s, when an unknown printer took a galley of
+                      type and scrambled it to make a type specimen book. It has
+                       survived not only five centuries,
+                       Lorem Ipsum is simply dummy text of the printing and typesetting
+                       industry. Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s, when an unknown printer took a galley of
+                         type and scrambled it to make a type specimen book. It has
+                          survived not only five centuries,</p>
+            <div class="readmore clear"><a href="post.html">Read More</a></div>
+            </div>
+                    
+        </div>
+        <div class="Sidebar clear">
+            <div class="samesidebar clear">
+                <h2>Latest Articl</h2>
+
+                <ul>
+                    <li><a href="#">Post title one will go here.</a></li>
+                    <li><a href="#">Post title two will go here.</a></li>
+                    <li><a href="#">Post title three will go here.</a></li>
+                    <li><a href="#">Post title four will go here.</a></li>
+                    <li><a href="#">Post title five will go here.</a></li>
+                    <li><a href="#">Post title six will go here.</a></li>
+    
+                </ul>
+                <h2>Populer Article</h2>
+                      <div class="populer clear">
+                        <h3><a href="#">Populer post will go here</a></h3>
+                        <img src="images/1.jpg" alt="Populer post">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's.</p>
+                      </div>
+                      
+                      <div class="populer clear">
+                        <h3><a href="#">Populer post will go here</a></h3>
+                        <img src="images/1.jpg" alt="Populer post">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's.</p>
+                      </div>
+                
+                      <div class="populer clear">
+                        <h3><a href="#">Populer post will go here</a></h3>
+                        <img src="images/1.jpg" alt="Populer post">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's.</p>
+                      </div>
+                    
+                      <div class="populer clear">
+                        <h3><a href="#">Populer post will go here</a></h3>
+                        <img src="images/1.jpg" alt="Populer post">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's.</p>
+                      </div>
+    
+                      <div class="populer clear">
+                        <h3><a href="#">Populer post will go here</a></h3>
+                        <img src="images/1.jpg" alt="Populer post">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's.</p>
+                      </div>
+                      <h2>Latest Articl</h2>
+                      <ul>
+                        <li><a href="#">Post title one will go here.</a></li>
+                        <li><a href="#">Post title two will go here.</a></li>
+                        <li><a href="#">Post title three will go here.</a></li>
+                        <li><a href="#">Post title four will go here.</a></li>
+                        <li><a href="#">Post title five will go here.</a></li>
+                        <li><a href="#">Post title six will go here.</a></li>
+        
+                    </ul>
+    
+            </div>
+           
+
+
+        </div>
+    </div>
+<div class="Footer template clear">
+    <div class="footermenu clear">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">privacy</a></li>
+        </ul>
+    </div>
+    <p>&copy; Copyright to Sayem Abdullah</p>
+
+</div>
+    
+</body>
+</html>
